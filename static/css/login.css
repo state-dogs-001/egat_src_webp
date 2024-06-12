@@ -1,0 +1,207 @@
+@import "main.css";
+@import "loader.css";
+
+.MuiOutlinedInput-input {
+  padding: 12.5px 14px !important;
+}
+
+.login-container {
+  left: 10vw;
+  top: auto;
+}
+
+.card-input-login {
+  padding: 80px 40px;
+  z-index: 10;
+  min-width: fit-content;
+  min-width: -moz-fit-content;
+  width: 60%;
+}
+
+.login-content {
+  background: linear-gradient(265deg, #f9fafc 40%, #ffffff33);
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 40px;
+}
+
+.login-logo {
+  height: 150px !important;
+  width: 150px !important;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-top: 20px;
+  display: flex;
+  margin-right: auto;
+}
+
+.input-content-size {
+  width: 400px;
+}
+
+.input-container {
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1em;
+  border-radius: 50px;
+  width: 400px;
+  /* background-color: white;
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3); */
+}
+
+.login-input {
+  height: unset !important;
+  display: flex;
+  flex: 1;
+  border-width: 0px;
+  padding: 1em;
+  background-color: transparent;
+  color: #0095da;
+}
+
+.login-input::placeholder {
+  color: #0095da;
+}
+
+.hide-password-icon {
+  cursor: pointer;
+}
+
+.login-btn-left {
+  padding: 10px;
+  flex: 1 1 0%;
+  text-align: center;
+  /* background-image: linear-gradient(to bottom, #ED9FCB, #DF4CA0); */
+  background-color: #df4ca0;
+  color: white;
+  margin-right: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow 0.1s ease-in;
+}
+
+.login-btn-left:hover {
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.1s ease-in;
+}
+
+.login-btn-right {
+  padding: 10px;
+  flex: 1 1 0%;
+  text-align: center;
+  /* background-image: linear-gradient(to bottom, #96C3DD, #1B55A2); */
+  background-color: #1b55a2;
+  color: white;
+  /* margin-left: 1em; */
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  user-select: none;
+  transition: box-shadow 0.1s ease-in;
+}
+
+.login-btn-right:hover {
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.1s ease-in;
+}
+
+#fouc {
+  visibility: visible !important;
+}
+
+.login-form {
+  overflow: hidden;
+  animation: animLoginForm 0.5s;
+  -webkit-animation: animLoginForm 0.5s;
+}
+
+.login-form-disable {
+  visibility: hidden;
+}
+
+.ant-form-explain {
+  width: 400px;
+  margin-left: auto;
+  text-align: right;
+  margin-right: auto;
+}
+
+@keyframes animLoginForm {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes animLoginForm {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.footer-login {
+  display: initial;
+}
+
+@media (max-width: 768px) {
+  .card-input-login {
+    padding: 40px 0px;
+  }
+
+  .footer-login {
+    display: none;
+  }
+
+  .login-content {
+    padding: 20px 10px;
+    background: linear-gradient(0deg, #f9fafc 40%, #ffffff33);
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .card-input-login {
+    padding: 0px;
+  }
+
+  .input-content-size {
+    width: 100%;
+  }
+
+  .input-container {
+    width: 100;
+  }
+
+  .login-content {
+    padding: 20px 10px;
+    background: linear-gradient(0deg, #f9fafc 40%, #ffffff33);
+  }
+
+  .login-logo {
+    height: 120px !important;
+    width: 120px !important;
+  }
+}

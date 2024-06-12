@@ -1,0 +1,38 @@
+/* import variable control*/
+
+@import "variablecontrol.css";
+/* End  import variable control*/
+
+.logout-btn-error {
+    color: var(--red-text-color);
+    cursor: pointer;
+    border: solid 1px var(--red-text-color);
+    border-radius: 4px;
+    user-select: none;
+    padding: 5px 10px;
+    margin-right: 20px;
+    transition: all .2s cubic-bezier(.25, .8, .25, 1);
+}
+
+.logout-btn-error:hover {
+    color: var(--white-text-color);
+    background-color: var(--red-text-color);
+    transition: all .2s cubic-bezier(.25, .8, .25, 1);
+}
+
+.refresh-btn {
+    cursor: pointer;
+    user-select: none;
+    border: solid 1px var(--link-text-color);
+    border-radius: 4px;
+    user-select: none;
+    padding: 5px 10px;
+    color: var(--link-text-color);
+    transition: all .2s cubic-bezier(.25, .8, .25, 1);
+}
+
+.refresh-btn:hover {
+    color: var(--white-text-color);
+    background-color: var(--link-text-color);
+    transition: all .2s cubic-bezier(.25, .8, .25, 1);
+}

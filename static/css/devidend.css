@@ -1,0 +1,129 @@
+/* import variable control*/
+
+@import "variablecontrol.css";
+/* End  import variable control*/
+
+.devidend-card {
+    animation: devidendAnim .5s;
+    -webkit-animation: devidendAnim .5s;
+}
+
+/* #region detail group setting  จัดข้อมูลที่ต้องการให้เเต่ละคอลัม มีขนาดเท่ากัน */
+
+.detail-group {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.detail-column-label {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail-column-label-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 10px;
+}
+
+.detail-column-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.devidend-list-dropdown {
+    /* display: none; */
+    display: flex;
+    /* height: 100%; */
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px 0px;
+    z-index: 100;
+    position: sticky;
+    top: 60px;
+    flex-wrap: wrap;
+    /* background-color: white; */
+}
+
+/* #endregion */
+
+@keyframes devidendAnim {
+    from {
+        opacity: 0;
+        transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes devidendAnim {
+    from {
+        opacity: 0;
+        transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.label-header {
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--sub-text-color);
+}
+
+.row-header {
+    padding: 0 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .devidend-list-dropdown {
+        display: flex;
+        /* height: 100%; */
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 10px 10px;
+        z-index: 100;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .label-header {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: small;
+    }
+
+    .row-header {
+        padding: 0 0 5px;
+    }
+
+}
+
+li {
+    list-style: none;
+}

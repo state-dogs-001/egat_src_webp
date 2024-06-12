@@ -1,0 +1,359 @@
+/* import variable control*/
+
+@import "variablecontrol.css";
+/* End  import variable control*/
+
+/* #region detail group setting  จัดข้อมูลที่ต้องการให้เเต่ละคอลัม มีขนาดเท่ากัน */
+
+.detail-group {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.detail-column-label {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail-column-label-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 10px;
+}
+
+.detail-column-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* #endregion */
+
+.acc-list-collapse {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 0px;
+    box-shadow: unset;
+    transition: all .5s cubic-bezier(.25, .8, .25, 1);
+}
+
+.acc-list-collapse.active {
+    position: sticky;
+    top: 60px;
+    z-index: 100;
+    background-color: rgb(255, 255, 255);
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 10px 0px;
+    transition: all .5s cubic-bezier(.25, .8, .25, 1);
+}
+
+.expand-icon {
+    transform: rotate(-90deg);
+    animation: all 3 ease-in;
+}
+
+.expand-icon-down {
+    transform: rotate(90deg);
+    animation: all 3 ease-in;
+}
+
+.statement-header {
+    padding: 10px 20px 0;
+    margin: 16px 0 8px;
+}
+
+.acc-card {
+    /* -webkit-box-shadow: 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+    border: solid 1px rgba(136, 142, 158, 0.3);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    animation: animAccCard .5s;
+    -webkit-animation: animAccCard .5s;
+}
+
+.acc-card .acc-card-overlay {
+    display: none;
+    background: linear-gradient(90deg, #00000000 0%, #3a406188 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+}
+
+@keyframes animAccCard {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes animAccCard {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.acc-card:hover .acc-card-overlay {
+    display: flex !important;
+    animation: animAccCardOverlay .5s;
+    -webkit-animation: animAccCardOverlay .5s;
+}
+
+@keyframes animAccCardOverlay {
+    from {
+        opacity: 0;
+        transform: translateX(100px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes animAccCardOverlay {
+    from {
+        opacity: 0;
+        transform: translateX(100px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.acc-card:hover {
+    -webkit-box-shadow: 0px 5px 10px -5px rgba(136, 142, 158, 0.5);
+    -moz-box-shadow: 0px 5px 10px -5px rgba(136, 142, 158, 0.5);
+    box-shadow: 0px 5px 10px -5px rgba(136, 142, 158, 0.5);
+    transform: translateY(-2px);
+}
+
+.acc-card-gradient {
+    background-size: contain;
+    background-position: center;
+    /* -webkit-box-shadow: 0px 5px 10px -5px rgba(136, 142, 158, 0.5);
+    -moz-box-shadow: 0px 5px 10px -5px rgba(136, 142, 158, 0.5);
+    box-shadow: 0px 5px 10px -5px rgba(136, 142, 158, 0.5); */
+}
+
+.search-btn-shadow {
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(130, 194, 38, 0.4);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(130, 194, 38, 0.4);
+    box-shadow: 0px 3px 5px 0px rgba(130, 194, 38, 0.4);
+}
+
+.loan-statement-table {
+    width: 100%;
+    border: 1px solid rgba(70, 99, 98, 0.5);
+    border-collapse: collapse;
+}
+
+.statement-row {
+    animation: animStatementRow .5s;
+    -webkit-animation: animStatementRow .5s;
+}
+
+.statement-row:hover {
+    background-color: rgba(70, 99, 98, 0.1) !important;
+}
+
+@keyframes animStatementRow {
+    from {
+        opacity: 0;
+        transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes animStatementRow {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.table-header {
+    /* background-image: linear-gradient(to bottom, #96C3DD, #1B55A2); */
+    background-color: var(--coop-second-color);
+    padding: 10px;
+    /* color: white; */
+    font-weight: 400;
+    text-align: center;
+    border: solid 1px #FFFFFF;
+    /* font-size: small; */
+}
+
+.main-content {
+    padding-top: 0px;
+}
+
+.acc-list-collapse .ant-collapse-header:hover {
+    /* background-color: rgba(161, 177, 192, 0); */
+}
+
+.ant-collapse-header:hover {
+    /* background-color: rgba(161, 177, 192, 0.1); */
+}
+
+.acc-list-header {
+    text-shadow: 0px 0px 0px rgba(136, 142, 158, 0);
+    transform: translateY(0px);
+    transition: all .3s ease-in-out
+}
+
+.acc-list-header:hover {
+    text-shadow: 0px 1px 5px rgba(136, 142, 158, 0.5);
+    transform: translateY(-1px);
+    transition: all .3s ease-in-out
+}
+
+.acc-setting-btn {
+    font-weight: 200;
+    font-size: small;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px rgba(136, 142, 158, 0.3);
+    padding: 2px 10px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    transition: all .1s ease-in;
+    background-color: var(--link-text-color);
+}
+
+.acc-setting-btn:hover {
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: solid 1px rgba(136, 142, 158, 0.3);
+    padding: 2px 10px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    transition: all .1s ease-in;
+    background-color: var(--link-text-lightcolor);
+}
+
+.row-statement-header {
+    padding: 0 0 10px;
+}
+
+.label-statement-header {
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--sub-text-color);
+}
+
+/* #region responsive setting */
+
+@media only screen and (max-width: 992px) {
+    table {
+        font-size: small !important;
+    }
+
+    table td div {
+        font-size: small !important;
+    }
+
+    .table-header {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .statement-header {
+        padding: 10px 10px 0 10px;
+    }
+
+    .main-content {
+        padding: 0px 5px 0px;
+    }
+
+    .main-layout {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .react-bootstrap-table {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 576px;
+        font-size: small !important;
+    }
+
+    table td div {
+        font-size: small !important;
+        padding: 10px;
+    }
+
+    th {
+        border: 0 !important;
+        position: sticky;
+        top: 0;
+    }
+
+    .table-header {
+        padding: 5px;
+    }
+
+    .row-statement-header {
+        padding: 0 0 5px;
+    }
+
+    .label-statement-header {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: small;
+    }
+}
+
+/* #endregion */

@@ -1,0 +1,165 @@
+/* import variable control*/
+
+@import "variablecontrol.css";
+/* End  import variable control*/
+
+.bal-table {
+    width: 100%;
+    border: 1px solid rgba(70, 99, 98, 0.5);
+    border-collapse: collapse;
+}
+
+.statement-row {
+    animation: animStatementRow .5s;
+    -webkit-animation: animStatementRow .5s;
+}
+
+.statement-row:hover {
+    background-color: rgba(70, 99, 98, 0.1) !important;
+}
+
+@keyframes animStatementRow {
+    from {
+        opacity: 0;
+        transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes animStatementRow {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.table-header {
+    /* background-image: linear-gradient(to bottom, #96C3DD, #1B55A2); */
+    background-color: var(--coop-second-color);
+    padding: 10px;
+    /* color: white; */
+    font-weight: 400;
+    text-align: center;
+    border: solid 1px #FFFFFF;
+}
+
+/* #region detail group setting  จัดข้อมูลที่ต้องการให้เเต่ละคอลัม มีขนาดเท่ากัน */
+
+.detail-group {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.detail-column-label {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail-column-label-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 10px;
+}
+
+.detail-column-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* #endregion */
+
+.row-statement-header {
+    padding: 0 0 10px;
+}
+
+.label-statement-header {
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--sub-text-color);
+}
+
+
+@media only screen and (max-width: 992px) {
+    table {
+        font-size: small !important;
+    }
+
+    table td div {
+        font-size: small !important;
+    }
+
+    .table-header {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-content {
+        padding: 0px 0 0px;
+    }
+
+    .react-bootstrap-table {
+        overflow-x: auto;
+        /* max-height: 70vh; */
+    }
+
+    table {
+        min-width: 576px;
+        font-size: small !important;
+    }
+
+    table td div {
+        font-size: small !important;
+        padding: 10px;
+    }
+
+    th {
+        border: 0 !important;
+        position: sticky;
+        top: 0;
+    }
+
+    .table-header {
+        padding: 5px;
+    }
+
+    .row-statement-header {
+        padding: 0 0 5px;
+    }
+
+    .label-statement-header {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: small;
+    }
+}
+
+/* #endregion responsive setting */

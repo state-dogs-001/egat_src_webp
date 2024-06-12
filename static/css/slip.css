@@ -1,0 +1,239 @@
+@import "variablecontrol.css";
+
+.slip-item {
+    border-radius: 4px;
+    animation: animListMonth .5s;
+    -webkit-animation: animListMonth .5s;
+}
+
+.slip-item:hover {
+    background-color: rgba(128, 128, 128, 0.05);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.slip-item .slip-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6)
+}
+
+.slip-item:hover .slip-overlay {
+    display: flex;
+}
+
+.slip-detail {
+    padding: 5px 10px 5px 10px;
+    border-right: 0 solid rgba(130, 194, 38, 0);
+    transition: border .2s cubic-bezier(0.23, 1, 0.32, 1), padding .2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.slip-detail.active {
+    padding: 5px 5px 5px 10px;
+    border-right: 5px solid rgb(130, 194, 38);
+    transition: border .2s cubic-bezier(0.23, 1, 0.32, 1), padding .2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.col-slip-item {
+    padding: 10px 0 0;
+}
+
+@keyframes animListMonth {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes animListMonth {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.col-list {
+    display: initial;
+}
+
+.swap-back-icon {
+    display: none;
+}
+
+.img-slip-layout {
+    padding-right: 300px
+}
+
+.year-list {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.month-list {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.year-col {
+    /* display: initial; */
+    display: none;
+}
+
+.month-col {
+    /* display: initial; */
+    display: none;
+}
+
+.dropdown-row {
+    padding-top: 0;
+}
+
+.ant-dropdown-trigger .anticon.anticon-down {
+    transform: rotateZ(0deg);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1)
+}
+
+.ant-dropdown-open .anticon.anticon-down {
+    transform: rotateZ(180deg);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1)
+}
+
+.pdf-content .ant-modal-content {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0);
+}
+
+.download-pdf-btn {
+    color: var(--link-text-color);
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid var(--link-text-color);
+    cursor: pointer;
+    user-select: none;
+}
+
+.download-pdf-btn:hover {
+    color: var(--white-text-color);
+    background-color: var(--link-text-color);
+}
+
+.report-modal-content {
+    position: fixed;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-modal-body {
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.report-modal-control {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: white;
+    padding: 10px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .img-slip-layout {
+        padding-right: 70px
+    }
+}
+
+.col-dropdown {
+    /* display: none; */
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .report-modal-body {
+        width: 100%;
+    }
+
+    /* .col-list {
+        display: none;
+    }
+    .col-list.active {
+        display: initial;
+    }
+    .swap-back-icon {
+        display: initial;
+    } */
+    .slip-item {
+        border-radius: 0px;
+    }
+
+    .col-slip-item {
+        padding: 0px;
+    }
+
+    .col-dropdown {
+        display: block;
+    }
+
+    .year-col {
+        display: none;
+    }
+
+    .month-col {
+        display: none;
+    }
+
+    .year-list {
+        display: none;
+    }
+
+    .month-list {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .img-slip-layout {
+        padding-right: 0;
+        padding-top: 40px;
+    }
+
+    .dropdown-row {
+        transform: translateY(40px);
+        transition: transform .1s ease-in;
+    }
+}

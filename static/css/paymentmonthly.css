@@ -1,0 +1,260 @@
+/* จัดข้อมูลที่ต้องการให้เเต่ละคอลัม มีขนาดเท่ากัน */
+.ant-table-placeholder {
+    display: none;
+}
+
+.detail-group {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.detail-column-label {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail-column-label-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.detail-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.detail-column-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* END */
+
+.list-month {
+    overflow: hidden auto;
+    flex: 1 1 0%;
+    max-height: 100%;
+}
+
+.expand-list {
+    display: none;
+}
+
+.main-content {
+    padding: 0;
+}
+
+.col-list-month {
+    padding: 0px 20px;
+    max-height: 100vh;
+    display: none;
+}
+
+.list-month-item {
+    animation: animListMonth .5s;
+    -webkit-animation: animListMonth .5s;
+}
+
+.month-detail {
+    padding: 5px 10px 5px 10px;
+    border-right: 0 solid rgba(130, 194, 38, 0);
+    transition: border .2s cubic-bezier(0.23, 1, 0.32, 1), padding .2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.month-detail.active {
+    padding: 5px 5px 5px 10px;
+    border-right: 5px solid rgb(130, 194, 38);
+    transition: border .2s cubic-bezier(0.23, 1, 0.32, 1), padding .2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.detail-item {
+    animation: animListMonth .5s;
+    -webkit-animation: animListMonth .5s;
+}
+
+@keyframes animListMonth {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes animListMonth {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+/* .list-month-item:hover {
+    background-color: rgba(128, 128, 128, 0.05);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+} */
+
+.col-dropdown {
+    display: block;
+}
+
+.row-header {
+    padding: 0 0 10px;
+}
+
+.label-header {
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--sub-text-color);
+}
+
+.dropdown-row {
+    transform: translateY(0px);
+    transition: transform .1s ease-in;
+}
+
+.ant-dropdown-trigger .anticon.anticon-down {
+    transform: rotateZ(0deg);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1)
+}
+
+.ant-dropdown-open .anticon.anticon-down {
+    transform: rotateZ(180deg);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1)
+}
+
+.report-modal-content {
+    position: fixed;
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-modal-body {
+    width: 100%;
+    max-height: 100vh;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.report-modal-control {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background: var(--gd-title-header);
+    padding: 10px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .list-dropdown {
+        padding: 0 0px 20px;
+    }
+
+    .report-modal-body {
+        width: 100%;
+    }
+
+    .col-dropdown {
+        display: block;
+    }
+
+    .col-list-month {
+        display: none
+    }
+
+    .col-slip-month {
+        padding: 0px;
+    }
+
+    .list-month {
+        overflow: hidden;
+        max-height: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .list-month.active {
+        overflow: hidden auto;
+        flex: 1 1 0%;
+        max-height: 100%;
+    }
+
+    .expand-list {
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        padding: 10px;
+        color: #0095DA
+    }
+
+    .expand-list i {
+        transform: rotateZ(90deg);
+        transition: transform .3s ease-in-out;
+    }
+
+    .expand-list.active i {
+        transform: rotateZ(-90deg);
+        transition: transform .3s ease-in-out;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-content {
+        /* padding-top: 40px; */
+    }
+
+    /* .col-list-month {
+        padding: 0px;
+        max-height: 100vh;
+    } */
+    .label-header {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: small;
+    }
+
+    .row-header {
+        padding: 0 0 5px;
+    }
+
+    .dropdown-row {
+        transform: translateY(40px);
+        transition: all .1s ease-in;
+    }
+}

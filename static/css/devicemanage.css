@@ -1,0 +1,43 @@
+.device-item:hover {
+    background-color: rgba(161, 177, 192, 0.1);
+}
+
+.device-logout-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.device-logout-btn:hover {
+    color: white;
+    background-color: #DF4CA0;
+}
+
+.device-item {
+    animation: itemDevice .5s;
+    -webkit-animation: itemDevice .5s;
+}
+
+@keyframes itemDevice {
+    from {
+        opacity: 0;
+        transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes itemDevice {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0)
+    }
+}

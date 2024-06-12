@@ -1,0 +1,97 @@
+/* จัดข้อมูลที่ต้องการให้เเต่ละคอลัม มีขนาดเท่ากัน */
+
+.detail-group {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.detail-column-label {
+  display: flex;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detail-column-label-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.detail-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 10px;
+}
+
+.detail-column-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* END */
+
+.loan-sub {
+  flex-direction: column;
+  display: flex;
+  padding-left: 20px;
+  cursor: pointer;
+  transition: all .1s ease-in
+}
+
+.loan-sub:hover {
+  background-color: rgba(161, 177, 192, 0.1);
+  opacity: 1 !important;
+  transition: all .1s ease-in
+}
+
+.col-loan-credit {
+  padding-bottom: 20px;
+  /* border-right: 5px solid rgb(249, 250, 251); */
+  flex: 1 1 0%;
+}
+
+.row-header {
+  padding: 0 0 10px;
+}
+
+.label-header {
+  font-weight: 200;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--sub-text-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .col-loan-credit {
+    padding-bottom: 20px;
+    border-right: 0px solid rgb(249, 250, 251);
+    flex: 1 1 0%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .main-content {
+    /* padding-top: 40px; */
+  }
+
+  .label-header {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: small;
+  }
+
+  .row-header {
+    padding: 0 0 5px;
+  }
+}

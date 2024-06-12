@@ -1,0 +1,124 @@
+.search-table {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 32px;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+    line-height: 32px;
+    line-height: 1.5 \9;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.search-table:focus {
+    border-color: #40a9ff;
+    border-right-width: 1px !important;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.table-sms .react-bootstrap-table {
+    border-radius: 5px;
+    max-width: 100%;
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.table-sms .react-bootstrap-table table {
+    min-width: 100%;
+    overflow: auto;
+}
+
+.table-sms .react-bootstrap-table table thead {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 3px 5px 0px;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: linear-gradient(to right, #1f909c, #1bd8cf);
+}
+
+.table-sms .react-bootstrap-table table th {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    border: 1px solid #dee2e6;
+}
+
+.table-sms .react-bootstrap-table table th,
+.table-sms .react-bootstrap-table .react-bs-table-no-data {
+    padding: 15px;
+}
+
+.table-sms .react-bootstrap-table table td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+}
+
+.table-sms .react-bootstrap-table table tbody tr:hover {
+    background-color: rgb(235, 236, 238);
+}
+
+.pagination {
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+}
+
+.page-link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.page-link {
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.page-item:first-child .page-link {
+    margin-left: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+.page-item:last-child .page-link {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+.react-bootstrap-table-pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+.beforePageper {
+    line-height: 35px;
+}

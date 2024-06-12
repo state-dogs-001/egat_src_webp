@@ -1,0 +1,40 @@
+:root {
+    --coop-main-color: #394676;
+    --coop-main-filter: rgba(57, 70, 118, 0.8);
+    --coop-main-focus-bg: rgba(57, 70, 118, 0.1);
+    --coop-second-color: #ffc122;
+    --normal-text-color: #444C66;
+    --header-text-color: #394676;
+    --sub-text-color: #888E9E;
+    --hilight-text-color: #16a085;
+    --red-text-color: #eb4d4b;
+    --link-text-color: #2A72D1;
+    --link-text-lightcolor: #3f80d5;
+    --white-text-color: #FFFFFF;
+    --balance-text-color: #82C226;
+    --red-bg: #cd5c5c;
+    --footer-text-color: #ffc122;
+    --title-text-color-1: #0779e4;
+    --title-text-color-2: #f2a365;
+    --gd-success-color: #27ae60;
+    --gd-menu: radial-gradient(circle, #2A72D1 0%, #394676 100%);
+    --gd-title-header: radial-gradient(circle at 1.7% 6.1%, #326bb5 0%, #1a4782 200.2%);
+    --gd-black: radial-gradient(circle at 1.7% 6.1%, #394989 0%, #393e46 200.2%);
+    --gd-title-sub: radial-gradient(circle at 1.7% 6.1%, #0095DA 0%, #009688 200.2%);
+    --gd-account-picker: radial-gradient(circle 919px at 1.7% 6.1%, #2A72D1 0%, #2A72D1 100.2%);
+    --gd-account-picker-transparent: radial-gradient(circle 919px at 1.7% 6.1%, rgba(41, 58, 76, 0) 0%, rgba(40, 171, 226, 0) 100.2%);
+    --gd-deposit-acc: linear-gradient(135deg, #6fdad1 10%, #394676 100%);
+    --gd-loan-acc: linear-gradient(135deg, #fff175 10%, #ffc122 100%);
+    /* --gd-default-btn: radial-gradient(ellipse at center, rgba(33, 104, 199, 1) 0%, rgba(27, 85, 162, 1) 100%); */
+    /* --gd-default-btn-hover: radial-gradient(ellipse at center, #2472d9 0%, rgba(27, 85, 162, 1) 100%); */
+    --gd-green-btn: radial-gradient(ellipse at center, #9bce53 0%, #82C226 100%);
+    --gd-green-btn-hover: radial-gradient(ellipse at center, #a5d65f 0%, #82C226 100%);
+    --gd-red-btn: radial-gradient(ellipse at center, rgb(230, 94, 171) 0%, #DF4CA0 100%);
+    --gd-red-btn-hover: radial-gradient(ellipse at center, rgb(218, 105, 169) 0%, #DF4CA0 100%);
+    /* background: linear-gradient(22deg, rgba(21, 181, 255, 1) 0%, rgba(0, 149, 218, 1) 59%); */
+    --gd-default-btn: radial-gradient(ellipse at center, #2A72D1 0%, #2A72D1 100%);
+    --gd-default-btn-hover: radial-gradient(ellipse at center, #3f80d5 0%, #2A72D1 100%);
+    --ln-isc-btn: linear-gradient(165deg, #6FD10E 10%, #54A800 100%);
+    --ln-isc-btn-hover: linear-gradient(165deg, #6FD10E 20%, #54A800 100%);
+    --ln-isc-disabled-btn: linear-gradient(165deg, #969696 10%, #848681 100%);
+}

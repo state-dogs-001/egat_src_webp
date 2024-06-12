@@ -1,0 +1,43 @@
+.notify-item:hover {
+    background-color: rgba(161, 177, 192, 0.1);
+}
+
+.notify-logout-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.notify-logout-btn:hover {
+    color: white;
+    background-color: #DF4CA0;
+}
+
+.notify-item {
+    animation: itemNotify .5s;
+    -webkit-animation: itemNotify .5s;
+}
+
+@keyframes itemNotify {
+    from {
+        opacity: 0;
+        transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes itemNotify {
+    from {
+        opacity: 0;
+        -webkit-transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateX(0)
+    }
+}

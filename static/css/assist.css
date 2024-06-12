@@ -1,0 +1,370 @@
+.assist-table {
+    width: 100%;
+}
+
+#assist-scroll {
+    padding: 0px 0px 40px;
+}
+
+.statement-row {
+    animation: animStatementRow .5s;
+    -webkit-animation: animStatementRow .5s;
+}
+
+.statement-row:hover {
+    background-color: rgba(70, 99, 98, 0.1) !important;
+}
+
+@keyframes animStatementRow {
+    from {
+        opacity: 0;
+        transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes animStatementRow {
+    from {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+.assist-receive-detail {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: assistDetail .2s ease-in-out;
+    -webkit-animation: assistDetail .2s ease-in-out;
+}
+
+@keyframes assistDetail {
+    from {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        max-height: 100vh;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@-webkit-keyframes assistDetail {
+    from {
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        max-height: 100vh;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.assist-table-header-first {
+    padding: 10px;
+    font-weight: 400;
+    text-align: center;
+    background-color: var(--coop-second-color);
+    /* color: white; */
+    border: solid 1px #FFFFFF;
+}
+
+.assist-table-header {
+    padding: 10px;
+    font-weight: 400;
+    text-align: center;
+    background-color: var(--coop-second-color);
+    /* color: white; */
+    border: solid 1px #FFFFFF;
+}
+
+.expand-list {
+    display: none;
+}
+
+.list-assist {
+    overflow: hidden auto;
+    flex: 1 1 0%;
+    max-height: 100%;
+}
+
+.assist-list-item {
+    -webkit-animation: animListItem 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: animListItem 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes animListItem {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes animListItem {
+    from {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+.col-list-assist {
+    padding: 0px 20px;
+    max-height: 100vh;
+}
+
+.assist-list {
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.assist-list-dropdown {
+    /* display: none; */
+    display: flex;
+    /* height: 100%; */
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px 0px;
+    z-index: 100;
+    position: sticky;
+    top: 60px;
+    flex-wrap: wrap;
+    /* background-color: white; */
+}
+
+.assist-dropdown-shadow {
+    box-shadow: 0px 10px 10px 0px rgba(150, 150, 150, 0.2);
+}
+
+.assist-col-table {
+    max-height: 100vh;
+    /* overflow: hidden auto; */
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.ant-dropdown-trigger .anticon.anticon-down {
+    transform: rotateZ(0deg);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1)
+}
+
+.ant-dropdown-open .anticon.anticon-down {
+    transform: rotateZ(180deg);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1)
+}
+
+.sub-content-assist {
+    min-height: auto;
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .assist-list-dropdown {
+        display: flex;
+        /* height: 100%; */
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding: 10px 10px;
+        z-index: 100;
+    }
+
+    .assist-list {
+        display: none;
+    }
+
+    .list-assist {
+        overflow: hidden;
+        max-height: 0;
+        transition: all .3s ease-in-out;
+    }
+
+    .list-assist.active {
+        overflow: hidden auto;
+        flex: 1 1 0%;
+        max-height: 100%;
+    }
+
+    .expand-list {
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        padding: 10px;
+        color: #0095DA
+    }
+
+    .expand-list i {
+        transform: rotateZ(90deg);
+        transition: transform .3s ease-in-out;
+    }
+
+    .expand-list.active i {
+        transform: rotateZ(-90deg);
+        transition: transform .3s ease-in-out;
+    }
+}
+
+.assist-detail-table {
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0%;
+    padding: 0px 0px 20px;
+}
+
+.label-header {
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--sub-text-color);
+}
+
+/* responsive table */
+
+@media only screen and (max-width: 992px) {
+    .assist-table {
+        font-size: small !important;
+    }
+
+    .assist- td div {
+        font-size: small !important;
+    }
+
+    .assist-table-header {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #assist-scroll {
+        padding: 0;
+    }
+
+    .assist-col-table {
+        padding: 0;
+    }
+
+    .assist-wrapper-table {
+        overflow-x: auto;
+    }
+
+    .assist-table {
+        min-width: 576px;
+        font-size: small !important;
+    }
+
+    .assist-table td div {
+        font-size: small !important;
+        padding: 10px;
+    }
+
+    .assist-table th {
+        border: 0 !important;
+        position: sticky;
+        background-color: #0095da;
+        color: white;
+        top: 0;
+    }
+
+    .assist-table-header-first {
+        padding: 5px;
+    }
+
+    .assist-table-header {
+        padding: 5px;
+    }
+
+    .col-list-assist {
+        max-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 10px;
+    }
+
+    .col-slip-month {
+        padding: 10px;
+        max-height: 100vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .assist-detail-table {
+        background-color: white;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 0%;
+        padding: 0px 0px 20px;
+    }
+}
+
+/* @media only screen and (max-width: 992px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    tr {
+        border: 1px solid #ccc;
+    }
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        border-left: 0px !important;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        transform: translateY(-50%);
+    }
+    td:nth-of-type(1):before {
+        content: "วันที่โอน";
+    }
+    td:nth-of-type(2):before {
+        content: "เลขบัญชี";
+    }
+    td:nth-of-type(3):before {
+        content: "จำนวนเงิน";
+    }
+} */

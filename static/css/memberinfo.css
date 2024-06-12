@@ -1,0 +1,34 @@
+.member-info {
+    animation: infoActive .5s;
+    -webkit-animation: infoActive .5s;
+}
+
+@keyframes infoActive {
+    from {
+        opacity: 0;
+        transform: translateY(5px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes infoActive {
+    from {
+        opacity: 0;
+        transform: translateY(5px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-content {
+        /* padding-top: 40px; */
+    }
+}

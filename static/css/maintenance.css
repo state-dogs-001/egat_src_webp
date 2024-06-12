@@ -1,0 +1,33 @@
+.maintenance-div {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 20000;
+    opacity: 0;
+    background-color: whitesmoke;
+    display: none;
+    flex-direction: column;
+}
+
+.maintenance-div.active {
+    display: flex;
+    background-color: whitesmoke;
+    opacity: 1;
+}
+
+.maintenance-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.maintenance-header {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

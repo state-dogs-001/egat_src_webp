@@ -1,0 +1,55 @@
+/* import variable control*/
+
+@import "variablecontrol.css";
+/* End  import variable control*/
+
+.cremet-card {
+    animation: animCremet 0.5s;
+    -webkit-animation: animCremet 0.5s;
+}
+
+.benefit-list:hover {
+    background-color: rgba(161, 177, 192, 0.1);
+}
+
+.label-header {
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--sub-text-color);
+}
+
+@-webkit-keyframes animCremet {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0) rotateY(0);
+        transform: translateX(0) rotateY(0);
+    }
+}
+
+@keyframes animCremet {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0) rotateY(0);
+        transform: translateX(0) rotateY(0);
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-content {
+        /* padding-top: 40px; */
+    }
+}

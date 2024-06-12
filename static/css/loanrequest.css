@@ -1,0 +1,165 @@
+/* import variable control*/
+@import "variablecontrol.css";
+
+/* End  import variable control*/
+.cleave-input-number.ant-input-number {
+    padding: 0 11px;
+    width: 100%;
+}
+
+.startdate-picker {
+    width: 100%;
+}
+
+.mock-btn {
+    background-image: var(--gd-green-btn);
+    font-weight: 200;
+    /* background-color: #82C226; */
+    cursor: pointer;
+    user-select: none;
+}
+
+.mock-btn:hover {
+    -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+    animation: all 1 ease-in;
+    background-image: var(--gd-green-btn-hover);
+}
+
+.transaction-btn {
+    background-image: var(--gd-default-btn);
+    font-weight: 200;
+    /* background-color: #1B55A2; */
+    cursor: pointer;
+    user-select: none;
+}
+
+.transaction-btn:hover {
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    animation: all 1 ease-in;
+    background-image: var(--gd-default-btn-hover);
+}
+
+.cancle-btn {
+    background-image: var(--gd-red-btn);
+    font-weight: 200;
+    /* background-color: #DF4CA0; */
+    cursor: pointer;
+    user-select: none;
+}
+
+.cancle-btn:hover {
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    animation: all 1 ease-in;
+    background-image: var(--gd-red-btn-hover);
+}
+
+.to-icon {
+    animation: iconActive .8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -webkit-animation: iconActive .8s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+}
+
+.loan-req-label {
+    /* font-weight: bold; */
+}
+
+@keyframes iconActive {
+    from {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    to {
+        opacity: .8;
+        transform: translateY(1px)
+    }
+}
+
+@-webkit-keyframes iconActive {
+    from {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    to {
+        opacity: .8;
+        transform: translateY(1px)
+    }
+}
+
+.left-card {
+    animation: leftActive .5s;
+    -webkit-animation: leftActive .5s;
+}
+
+.right-card {
+    animation: rightActive .5s;
+    -webkit-animation: rightActive .5s;
+}
+
+@keyframes rightActive {
+    from {
+        opacity: 0;
+        transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes rightActive {
+    from {
+        opacity: 0;
+        transform: translateX(10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@keyframes leftActive {
+    from {
+        opacity: 0;
+        transform: translateX(-10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes leftActive {
+    from {
+        opacity: 0;
+        transform: translateX(-10px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .main-content {
+        /* padding-top: 40px; */
+    }
+
+    .loan-req-label {
+        /* font-weight: bold; */
+    }
+}
