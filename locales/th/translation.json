@@ -1,13 +1,13 @@
-{  
-    "BindaccountBayKMAResultTitle" : "ผูกบัญชีธนาคารกรุงศรี",
-    "BindaccountBayKMAResultSuccessDes" : "ระบบได้ทำการผูกบัญชีธนาคผ่านแอพพิลเคชั่น KMA กรุงศรีเรียบร้อยแล้ว",
-    "BindaccountBayKMAResultErrorDes" : "ผูกบัญชีธนาคผ่านแอพพิลเคชั่น KMA ไม่สำเร็จ",
-    "BindaccountBayKMAConfirm" : "กลับไปยังแอปพลิเคชัน EGAT",
+{
+    "BindaccountBayKMAResultTitle": "ผูกบัญชีธนาคารกรุงศรี",
+    "BindaccountBayKMAResultSuccessDes": "ระบบได้ทำการผูกบัญชีธนาคผ่านแอพพิลเคชั่น KMA กรุงศรีเรียบร้อยแล้ว",
+    "BindaccountBayKMAResultErrorDes": "ผูกบัญชีธนาคผ่านแอพพิลเคชั่น KMA ไม่สำเร็จ",
+    "BindaccountBayKMAConfirm": "กลับไปยังแอปพลิเคชัน EGAT",
     "DownloadFileNotFound": "ไม่พบไฟล์ดาวน์โหลด",
     "Files_count": "ไฟล์",
     "DownloadDocuments": "ดาวน์โหลดเอกสาร",
     "FrequentlyQuestions": "คำถามที่พบบ่อย",
-    "AnnouncementFromTheCooperative":"ประกาศจากสหกรณ์",
+    "AnnouncementFromTheCooperative": "ประกาศจากสหกรณ์",
     "DoNotShowAgain": "ไม่ต้องแสดงอีก",
     "NotAccept": "ไม่ยอมรับ",
     "Accept": "ยอมรับ",
@@ -495,6 +495,7 @@
     "DepositAccountNo": "เลขบัญชีเงินฝาก",
     "LoanIntCertify": "เอกสารหนังสือรับรองดอกเบี้ยบ้าน",
     "ConfirmBalance": "ยืนยันยอด",
-    "Other":"อื่นๆ"
-
+    "Other": "อื่นๆ",
+    "BalanceIsConfirmed": "ท่านได้ยืนยันยอดเรียบร้อยแล้ว",
+    "BalanceIsConfirmedDescription": "หากท่านต้องการแก้ไขการยืนยันยอดกรุณาติดต่อสหกรณ์"
 }
