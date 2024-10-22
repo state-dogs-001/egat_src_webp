@@ -1,9 +1,0 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.egatsaving.mobile",
-    "sha256_cert_fingerprints":
-    ["74:A8:9C:43:D8:15:9E:1A:92:D8:8B:27:E7:DA:61:AB:04:39:04:1B:E9:77:B9:02:CE:58:EF:3D:24:D8:3E:0D"]
-  }
-}]
